@@ -68,5 +68,5 @@ Output preview:
 ### 🧠 Key highlights
 - Parameterized SQL query (`:partner`, `:factory`, `:start`)  
 - Reproducible fake dataset seeded automatically  
-- Outputs `shipments.csv` with order, carrier, and invoice data  
+- Outputs `weekly_summary.csv` with order, carrier, and invoice data  
 - Optional: run interactively in **Codespaces**, or trigger via **GitHub Actions**  
