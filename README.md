@@ -51,17 +51,20 @@ Run the below Workflow:
 
 Run the workflow:
 
-<img width="378" height="512" alt="image" src="https://github.com/user-attachments/assets/602f50ad-337a-46df-a46e-38d2840e7a72" />
+<img width="1320" height="546" alt="image" src="https://github.com/user-attachments/assets/707ff919-d4a6-4514-82dc-15dd4f02e6ca" />
+
 
 After it completes (about 15 seg), enter in the workflow and download the file for preview:
 
-<img width="1545" height="549" alt="image" src="https://github.com/user-attachments/assets/be1c09d7-635b-4d48-b5b0-b72c1435d644" />
+<img width="1532" height="538" alt="image" src="https://github.com/user-attachments/assets/5f987359-ff7f-4931-b131-ca5fd117b5f5" />
+
 
 Output preview:
-<img width="1456" height="650" alt="image" src="https://github.com/user-attachments/assets/e3c9ca46-6101-4ed8-a6b0-34245b5e0dc1" />
+<img width="386" height="660" alt="image" src="https://github.com/user-attachments/assets/d0ef4204-a640-4ce8-9c71-b280caf1e34d" />
+
 
 ### 🧠 Key highlights
-- Parameterized SQL query (`:carrier`, `:factory`, `:start`)  
+- Parameterized SQL query (`:partner`, `:factory`, `:start`)  
 - Reproducible fake dataset seeded automatically  
 - Outputs `shipments.csv` with order, carrier, and invoice data  
 - Optional: run interactively in **Codespaces**, or trigger via **GitHub Actions**  
