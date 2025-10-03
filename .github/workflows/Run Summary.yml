@@ -1,8 +1,3 @@
-
----
-
-### F) `.github/workflows/run-summary.yml`
-```yaml
 name: Run Summary
 
 on:
@@ -45,7 +40,6 @@ jobs:
 
       - name: Run weekly summary
         run: |
-          # normalize empty inputs for factory (None) vs strings for others
           if [ -z "${{ github.event.inputs.factory }}" ]; then FACT_OPT=""; else FACT_OPT="--factory ${{ github.event.inputs.factory }}"; fi
           python app.py report \
             --start "${{ github.event.inputs.start }}" \
