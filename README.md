@@ -32,7 +32,7 @@ python app.py report --start 2023-12-01 --factory 2 --carrier DHLGM --out weekly
 Run the below Workflow
 [![Run Summary](https://github.com/<CarlosJordan-AI>/weekly-shipping-summary-report/actions/workflows/run-summary.yml/badge.svg)](../../actions/workflows/run-summary.yml)
 
-Run the workflow
+Run the workflow:
 <img width="378" height="512" alt="image" src="https://github.com/user-attachments/assets/602f50ad-337a-46df-a46e-38d2840e7a72" />
 
 After it complete running (about 15 seg), enter in the workflow and download the file for preview:
