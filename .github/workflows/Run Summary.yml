@@ -1,0 +1,61 @@
+
+---
+
+### F) `.github/workflows/run-summary.yml`
+```yaml
+name: Run Summary
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Start date (YYYY-MM-DD)"
+        required: true
+        default: "2023-12-01"
+      factory:
+        description: "Factory ID (optional)"
+        required: false
+        default: ""
+      partner:
+        description: "Partner (optional)"
+        required: false
+        default: ""
+      carrier:
+        description: "Carrier (optional)"
+        required: false
+        default: ""
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Seed fake database
+        run: python app.py seed
+
+      - name: Run weekly summary
+        run: |
+          # normalize empty inputs for factory (None) vs strings for others
+          if [ -z "${{ github.event.inputs.factory }}" ]; then FACT_OPT=""; else FACT_OPT="--factory ${{ github.event.inputs.factory }}"; fi
+          python app.py report \
+            --start "${{ github.event.inputs.start }}" \
+            $FACT_OPT \
+            --partner "${{ github.event.inputs.partner }}" \
+            --carrier "${{ github.event.inputs.carrier }}" \
+            --out weekly_summary.csv
+
+      - name: Upload CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-summary
+          path: weekly_summary.csv
