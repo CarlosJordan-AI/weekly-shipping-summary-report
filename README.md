@@ -25,6 +25,7 @@ pip install -r requirements.txt
 python app.py seed
 python app.py report --start 2023-12-01 --factory 2 --carrier DHLGM --out weekly_summary.csv
 ```
+
 ---
 
 ### Option 2 — Workflows (interactive)
