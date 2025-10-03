@@ -1,8 +1,9 @@
 
 # 📈 Weekly Shipping Summary Report (SQLite + Python)
 Weekly Shipping Summary Report
-> **Portfolio project #2** — Weekly rollups by **Partner + Carrier (+ Factory)** with orders, packages, and shipping totals (fake but realistic data).
+> — Weekly rollups by **Partner + Carrier + Factory** with orders, packages, and shipping totals (fake but realistic data).
 
+[![Run Summary](https://github.com/<CarlosJordan-AI>/weekly-shipping-summary-report/actions/workflows/run-summary.yml/badge.svg)](../../actions/workflows/run-summary.yml)
 ---
 
 ## Why this matters
@@ -10,6 +11,7 @@ Finance/Operations teams often track **weekly** shipping cost trends by **partne
 - Reconcile invoices
 - Spot cost spikes
 - Plan capacity
+- Audit invoice payments
 
 ---
 
