@@ -1,17 +1,33 @@
 
 # 📈 Weekly Shipping Summary Report (SQLite + Python)
+
+> This project showcases how SQL + Python automation can generate reports used in real-world logistics or finance workflows.
+> This demo uses **fake but realistic data** to simulate a real-world **operations & finance report**:
+> 
 Weekly Shipping Summary Report
 > — Weekly rollups by **Partner + Carrier + Factory** with orders, packages, and shipping totals (fake but realistic data).
 
 
 ---
 
-## Why this matters
+### 🔍  Why this matters
 Finance/Operations teams often track **weekly** shipping cost trends by **partner** and **carrier** to:
 - Reconcile invoices
 - Spot cost spikes
 - Plan capacity
 - Audit invoice payments
+
+---
+
+### ⚙️ How it works
+This small pipeline combines:
+- 🗃️ **SQLite** (lightweight fake database)
+- 💡 **SQL** report (`report.sql`)
+- 🐍 **Python CLI** (`app.py`) to:
+  - seed fake data  
+  - execute the report  
+  - export the results as a CSV  
+- ⚡ **GitHub Actions workflow** for one-click report generation directly on GitHub 
 
 ---
 
