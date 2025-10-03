@@ -61,7 +61,8 @@ After it completes (about 15 seg), enter in the workflow and download the file f
 
 Output preview:
 
-<img width="386" height="660" alt="image" src="https://github.com/user-attachments/assets/d0ef4204-a640-4ce8-9c71-b280caf1e34d" />
+<img width="1465" height="656" alt="image" src="https://github.com/user-attachments/assets/5b09097c-c0b3-4231-afed-7e79a4ed7cbd" />
+
 
 
 ### 🧠 Key highlights
